@@ -6,3 +6,7 @@ echo "hello"
 echo "hi"
 
 # this is 2nd line
+
+echo "extra line"
+
+# added 3rd line

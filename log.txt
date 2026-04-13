@@ -1,0 +1,22 @@
+commit f4e89cad05e67a0a66d37f7c5b4dc243388624b5
+Author: prashant <prvpacha27@gmail.com>
+Date:   Thu Apr 9 06:46:59 2026 +0530
+
+    added 3rd line using VS code
+
+diff --git a/test.sh b/test.sh
+index ed8a287..15a36a3 100644
+--- a/test.sh
++++ b/test.sh
+@@ -5,4 +5,8 @@ echo "hello"
+ 
+ echo "hi"
+ 
+-# this is 2nd line
+\ No newline at end of file
++# this is 2nd line
++
++echo "extra line"
++
++# added 3rd line
+\ No newline at end of file

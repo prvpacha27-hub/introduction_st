@@ -11,13 +11,12 @@ pipeline {
                 checkout scm
             }
         }
-    stages {
         stage('Checkout java code') {
-            steps {
-                deleteDir()
-                git branch: 'master',
+          steps {
+            deleteDir()
+            git branch: 'master',
                 //    credentialsId: 'github-creds',
-                    url: 'https://github.com/Prashanthv10/javaparser-maven-sample.git'
+                url: 'https://github.com/Prashanthv10/javaparser-maven-sample.git'
             }
         }
 

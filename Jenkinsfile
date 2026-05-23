@@ -6,9 +6,18 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
+        stage('Checkout jenkins file') {
             steps {
                 checkout scm
+            }
+        }
+    stages {
+        stage('Checkout java code') {
+            steps {
+                deleteDir()
+                git branch: 'master',
+                //    credentialsId: 'github-creds',
+                    url: 'https://github.com/Prashanthv10/javaparser-maven-sample.git'
             }
         }
 
